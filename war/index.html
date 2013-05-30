@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/login.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -29,7 +30,7 @@
 			        <li><a href="submit.html">Enter Temperature</a></li>  
 			        <li><a href="map.html">Map</a></li> 
    			        <li><a href="tower_data.html">Sample Data Page</a></li>  
-			        <li><a href="login.html">Logout</a></li>  
+			        <li><a href="#" onclick="logout()">Logout</a></li>      
 			    </ul>  
 			    	<a href="#" id="pull">Menu</a>  
 			    	
@@ -74,5 +75,18 @@
 		});
 	</script>
 
+
+	
+
+    <span id="signinButton2"style="display:none" >
+  <span
+    class="g-signin"
+    data-callback="signinCallback2"
+    data-clientid="184351153940-ebl1enenn8j4lnetnf794je22cec0jd2.apps.googleusercontent.com"
+    data-cookiepolicy="single_host_origin"
+    data-requestvisibleactions="http://schemas.google.com/AddActivity"
+    data-scope="https://www.googleapis.com/auth/plus.login">
+  </span>
+</span>
     </body>
 </html>

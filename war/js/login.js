@@ -3,6 +3,7 @@
  */
 //facebook intialize
 //mode="production";
+<<<<<<< HEAD
 mode = "test";
 // alert(window.location.hostname);
 function appId() {
@@ -12,6 +13,7 @@ function appId() {
 
 	} else
 		appId = '518199254908287';
+
 
 	return appId;
 }
@@ -44,6 +46,7 @@ window.fbAsyncInit = function() {
 }(document));
 // after user click the login using facebook button, call this function to login
 function loginUser() {
+
 	FB.login(
 			function(response) {
 				if (response.authResponse) {
@@ -72,6 +75,7 @@ function loginUser() {
 							});*/
 				} else {
 					console.log('User cancelled login or did not fully authorize.');
+
 				}
 			}, {
 				scope : 'email',

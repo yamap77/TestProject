@@ -18,4 +18,15 @@
    return false;
        
 		 }
+		  function checked3(){
+				 //alert("checkbox is checked");
+				 if(document.getElementById("grower").checked)
+				 return true;
+				 
+		   // alert("checkbox is checked");
+		   else
+		   return false;
+		       
+				 }
+				  	
 		  		

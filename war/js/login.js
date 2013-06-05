@@ -3,7 +3,7 @@
  */
 //facebook intialize
 //mode="production";
-<<<<<<< HEAD
+
 mode = "test";
 // alert(window.location.hostname);
 function appId() {

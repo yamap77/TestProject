@@ -2,12 +2,23 @@ function Station(arr) {
 	
 }
 //static
-Station.createStnObj = function(arr){
-	if('lat' in arr){
+Station.createStnObj = function(arr,tag){
+	//alert("asdfds"+arr.latitude);
+	//alert("tag"+ tag);
+	if(tag==1){
+		//alert("Fawn");
 		return new FawnStation(arr);
-	}else if('latitude' in arr){//latitude
+	}else if(tag==2){//latitude
 		return new MadisStation(arr);
-	}else{
+	}else if(tag==3){
+		//alert("world"+ arr.latitude);
+		//alert("testesteset"+arr.latitude);
+		
+		//var x=new GrowerStation(arr);
+		//alert("xxxxx"+x);
+		return new GrowerStation(arr);
+	}
+	else{
 		return new GladStoneFamilyStation(arr);
 	}
 	

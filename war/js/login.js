@@ -4,6 +4,8 @@
 //facebook intialize
 
 //mode="production";
+//mode="test";
+//mode="production";
 mode="test";
 //alert(window.location.hostname);
 function appId(){
@@ -50,8 +52,8 @@ function loginUser() {
 			FB.api('/me', function(response) {
 				console.log('Good to see you, ' + response.name + '.');
 				if(mode=="test"){
-					alert(session.getState());
-				//top.location.href = "http://localhost:8888/index.html";
+					//alert(session.getState());
+				top.location.href = "http://localhost:8888/index.html";
 				}
 				else{
 				 top.location.href="http://yamaptest.appspot.com/index.html"
